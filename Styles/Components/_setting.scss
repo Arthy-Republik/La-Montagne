@@ -1,0 +1,40 @@
+
+@font-face {
+  font-family: "font-1";
+  src: url(/Styles/assets/Font/Merriweather/Merriweather-Regular.ttf);}
+
+@font-face {
+  font-family: "font-2";
+  src: url(/Styles/assets/Font/Merriweather/Merriweather-Bold.ttf); }
+    
+  
+
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", serif;
+
+$color-1: white;
+$color-2: black;
+
+body { 
+  background: url(/Styles/assets/images/bg.jpg) no-repeat 
+    center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "font-1";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li { 
+  list-style: none;
+}
+
+a { 
+  text-decoration: none;
+}
