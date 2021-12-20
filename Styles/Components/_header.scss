@@ -1,65 +1,39 @@
-.mountain { 
-text-align: center;
- margin-top: 90px;
- align-content: center;
-
-    h1 {
-      font-family: "font-2";
-      font-size: 4rem;
-      font-weight: bolder;
-      letter-spacing: 5px;
-      text-align: center;
-      color: $color-1;
-    }
-    p  { 
-      font-family: "font-1";
-      font-size: 0.8rem;
-      letter-spacing: 2px;
-      text-align: center;
-      color:$color-1;
-      margin-top: 40px;
-  text-align: center;
-}
-
-.arrow {
+header {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  height: 20px;
-  transform: rotate(90deg);
- margin: 20px auto;
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 150px;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-}}
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-top: 130px;
-  margin-left: 40px;
-  margin-right: 40px;
+  flex-direction: column;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: headerAnim 1.5s forwards;
 
-  .left-nav { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-  }
-  .left-nav li { 
-    font-family: "font-1"; 
-  font-size: 0.8rem; }
-
-  .right-nav { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @keyframes headerAnim {
+    100% {
+      transform: translateY(-40px);
+      opacity: 1;
+    }
   }
 
-  .left-nav li { 
-    font-family: "font-1"; 
-  font-size: 0.8rem;
-padding: 10 0; }}
+  h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  p {
+    margin: 40px auto 60px;
+    width: 85%;
+    font-style: italic;
+  }
+  span {
+    transform: rotate(90deg);
+    border: 1px solid white;
+    border-radius: 150px;
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
