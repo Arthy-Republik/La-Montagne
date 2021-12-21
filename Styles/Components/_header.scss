@@ -9,8 +9,8 @@ header {
   animation: headerAnim 1.5s forwards;
 
   @media screen and (max-width: 890px) {
-    margin-top: 100px;
-    min-height: 60vh;
+    margin-top:50px;
+    min-height: 30vh;
    }
 
 
@@ -61,7 +61,6 @@ header {
     cursor: pointer;
 
     &:hover { 
-      
       transform: rotate(90deg)
     }
     @media screen and (max-width: 890px) {

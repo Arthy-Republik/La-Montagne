@@ -1,10 +1,10 @@
 @font-face {
   font-family: "font-1";
-  src: url(/Styles/assets/Font/Merriweather/Merriweather-Regular.ttf);}
+  src: url(../assets/Font/Merriweather/Merriweather-Regular.ttf);}
 
 @font-face {
   font-family: "font-2";
-  src: url(/Styles/assets/Font/Merriweather/Merriweather-Bold.ttf); }
+  src: url(../assets/Font/Merriweather/Merriweather-Bold.ttf); }
     
   
 
@@ -20,6 +20,9 @@ $color-2: black;
   box-sizing: border-box;
 }
 
+a { 
+  text-decoration: none;
+}
 li {
   list-style: none;
 }
