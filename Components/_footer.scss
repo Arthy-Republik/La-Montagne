@@ -46,6 +46,7 @@ footer {
         text-transform: uppercase;
         cursor: pointer;
         font-family: "$font-1";
+        transition: 0.4s;
         
 
       &:hover {
@@ -70,6 +71,7 @@ footer {
       display: grid;
       grid-template-columns: 30% 70%;
       align-items: center;
+      text-align: left;
 
       h3 {
         text-transform: uppercase;
@@ -90,13 +92,18 @@ footer {
         line-height: 26px;
         color: rgb(138, 138, 138);
         font-family: "$font-1";
+
+        @media screen and (max-width: 890px) {
+        margin-bottom: 8px;
+          
+          }
       }
     }
     .social {
       
       ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
 
         li {
           border: 1px solid rgb(209, 209, 209);
