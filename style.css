@@ -1,11 +1,11 @@
 @font-face {
   font-family: "font-1";
-  src: url(../assets/Font/Merriweather/Merriweather-Regular.ttf);
+  src: url(./assets/Font/Merriweather/Merriweather-Regular.ttf);
 }
 
 @font-face {
   font-family: "font-2";
-  src: url(../assets/Font/Merriweather/Merriweather-Bold.ttf);
+  src: url(./assets/Font/Merriweather/Merriweather-Bold.ttf);
 }
 
 * {
@@ -24,7 +24,7 @@ li {
 }
 
 body {
-  background: url(../assets/images/bg.jpg) center/cover fixed;
+  background: url(./assets/images/bg.jpg) center/cover fixed;
   font-family: "font-1";
   min-height: 100vh;
   text-align: center;
@@ -208,7 +208,10 @@ main nav ul.nav-left {
 
 main nav ul.nav-left:hover li:not(:hover) {
   background: none;
-  color: black;
+}
+
+main nav ul.nav-left:hover li:not(:hover) a {
+  color: white;
 }
 
 main nav ul.nav-left li {
@@ -226,22 +229,23 @@ main nav ul.nav-left li {
   color: white;
 }
 
-main nav ul.nav-left li a:not(:hover) {
-  background: none;
-  color: black;
+main nav ul.nav-left li a {
+  color: white;
 }
 
 main nav ul.nav-left li:first-child {
   background: white;
+}
+
+main nav ul.nav-left li:first-child a {
   color: black;
 }
 
 main nav ul.nav-left li:hover {
   background: white;
-  color: black;
 }
 
-main nav ul.nav-left li a:hover {
+main nav ul.nav-left li:hover a {
   color: black;
 }
 
@@ -532,7 +536,7 @@ main .section-1 .bot-section-1 .bl-section-1 p {
   font-family: "$font-1";
   text-align: center;
   line-height: 30px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding-bottom: 40px;
 }
 
@@ -654,7 +658,7 @@ main .section-1 .bot-section-1 .br-section-1 p {
   font-family: "$font-1";
   line-height: 30px;
   padding-bottom: 40px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 @media screen and (max-width: 550px) {
